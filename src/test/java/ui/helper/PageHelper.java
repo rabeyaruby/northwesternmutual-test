@@ -42,6 +42,11 @@ public class PageHelper {
         findWebElementBy(locator).sendKeys(value);
     }
 
+    /**
+     * Wait for element to load
+     * @param by
+     * @return
+     */
     public WebElement findWebElementBy(By by) {
         WebElement element = null;
         try {

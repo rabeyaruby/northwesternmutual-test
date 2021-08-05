@@ -1,4 +1,4 @@
-package ui.test;
+package ui.tests;
 
 import org.junit.Assert;
 import org.junit.Test;

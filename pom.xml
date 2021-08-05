@@ -69,7 +69,7 @@
                         <version>2.12.4</version>
                         <configuration>
                             <includes>
-                                <include>ui/test/*</include>
+                                <include>ui/tests/*</include>
                             </includes>
                         </configuration>
                     </plugin>
