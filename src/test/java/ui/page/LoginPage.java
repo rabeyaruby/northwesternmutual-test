@@ -2,6 +2,7 @@ package ui.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import ui.helper.Constants;
 import ui.helper.PageHelper;
 
 public class LoginPage extends PageHelper {
@@ -14,10 +15,8 @@ public class LoginPage extends PageHelper {
     }
 
     public void login() {
-        String userName = "standard_user";
-        String passWord = "secret_sauce";
-        setField(userNameField, userName);
-        setField(passWordField, passWord);
+        setField(userNameField, Constants.DEFAULT_USERNAME);
+        setField(passWordField, Constants.DEFAULT_PASSWORD);
         clickOnElement(logInButton);
     }
 }

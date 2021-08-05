@@ -12,8 +12,14 @@ import static ui.helper.Constants.DEFAULT_TIMEOUT_SECONDS;
 import static ui.helper.Constants.TIMEOUT_SECONDS_THIRTY;
 
 public class DriverUtils {
+
     public static WebDriver driver;
 
+    /**
+     * Load driver, pass driver type: chrome, ie, firefox, etc.
+     * @param driverType
+     * @return
+     */
     public static WebDriver loadDriver(String driverType) {
         if (driverType.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
