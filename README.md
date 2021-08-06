@@ -1,7 +1,7 @@
 # northwesternmutual-test
 Selenium Maven automated regression/integration test project.
 
-##Overview
+## Overview
 Maven Selenium WebDriver Java project using JUnit testing framework.
 This project is a Page Object Design pattern. Test data such as login credentials and URLs can be derived from the environment properties. 
 Test project separated into three packages: helper, page, test
@@ -17,11 +17,11 @@ tests: Contains all test classes.
 
 resources: Environment-specific test data such as URL, credentials.
 
-####How To Run The Test
+#### How To Run The Test
 - Simply right-click on the tests package to run all tests under the package, test class name to run all tests under a test class, or on a test method name to simply run only a test.
 - Or using maven command with test suit profile: ````mvn clean test -Pui-regression-tests````
 
-#####How To Add New Test
+##### How To Add New Test
 - Add test method in 'tests' package with new test class or in existing test class.
 - New test class should inherit TestHelper.
 - Test class should not have any page elements.
@@ -30,6 +30,6 @@ resources: Environment-specific test data such as URL, credentials.
 - Add all test step(s) in page object and test should instantiate the page object and call the steps from the page object and test should assert.
 - Any helper methods that interact with a UI page should be in the PageHelper class.
 
-#####Note
+##### Note
 - Minimize number assert pert tests.
 - Split tests for specific verification.
